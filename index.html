@@ -22,6 +22,16 @@
     environment: 'prod-apne1',
     deploymentId: '6a9ba3ec-ef75-4f75-a579-99eec3c55824'
   });
+
+const dbSet = () => {
+  Genesys('command', 'Database.set', {
+    messaging: {
+      customAttributes: {
+        languageCode: "en-us"
+      }
+    }
+  });
+};
 </script>
 
 </html>
